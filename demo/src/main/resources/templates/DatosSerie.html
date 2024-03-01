@@ -11,7 +11,7 @@
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="/css/Directorio.css">
+<link rel="stylesheet" href="/css/DatosSerie.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-		<nav class="sticky navbar">
+	<nav class="sticky navbar">
 		<div class="brand  display__logo">
 			<a href="/" class="nav__link"> <span class="logo">My
 					Series</span></a>
@@ -32,7 +32,7 @@
 			class="nav__open"><i></i><i></i><i></i></label>
 		<div class="nav">
 			<ul class="nav__items">
-				<li  class="nav__item"><div id="toggle"></div></li>
+				<li class="nav__item"><div id="toggle"></div></li>
 				<li class="nav__item"><a href="/" class="nav__link">Inicio</a></li>
 				<li class="nav__item"><a href="/directorio" class="nav__link">Directorio</a></li>
 				<li class="nav__item"><a href="formularioLogin"
@@ -42,25 +42,50 @@
 			</ul>
 		</div>
 	</nav>
-	
-	
+
+
 	<div class="container-fluid">
-	
-	<div id="menu">
-	
-<div class="dropdown">
-  <button class="dropbtn">Genero</button>
-  <div class="dropdown-content">
-    <a href="#">Accion</a>
-    <a href="#">Aventura</a>
-    <a href="#">Ciencia-Ficcion</a>
-  </div>
-</div>
-	
-	</div>
-	
-			
-	
+
+		<div class="grid-container">
+			<div class="ElGrid ElGrid1">
+
+				<div id="imagen">
+					<img src="img/series/the_office.jpg" height="100%" width="100%">
+				</div>
+				<div id="rating">
+					<h4>Puntuacion:&nbsp;&nbsp;</h4>
+					<h4 id="genero">9.5</h4>
+				</div>
+			</div>
+			<div class="ElGrid ElGrid2">
+
+				<div id="nombre">
+					<h4>Nombre:&nbsp;&nbsp;</h4>
+					<h4 id="nombre">The Office</h4>
+				</div>
+
+				<div id="genero">
+					<h4>Genero:&nbsp;&nbsp;</h4>
+					<h4 id="genero">Comedia</h4>
+				</div>
+
+				<div id="descipcion">
+					<h5>Descripcion:&nbsp;&nbsp;</h5>
+					<h5 id="genero">La serie "The Office" está ambientada en la
+						localidad de Scranton, en Pensilvania, concretamente en la oficina
+						de la empresa Dunder Mifflin. Y sigue el día a día de sus
+						trabajadores por medio de formato de falso documental, que le da
+						buena parte de su personalidad única</h5>
+				</div>
+				
+				<div id="div-boton-fav">
+					<input type="button" value="Favoritos" id="boton-fav" >
+				</div>
+
+			</div>
+		</div>
+
+
 	</div>
 
 

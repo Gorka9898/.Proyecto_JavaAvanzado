@@ -78,7 +78,6 @@
   text-decoration: none;
 }
 
-
 .brand {
   margin: 0;
   font-size: 1.45em;
@@ -98,10 +97,6 @@
   line-height: inherit;
 }
 
-.logo:hover{
-	color:red;
-}
-
 .logo::before {
   display: inline-block;
   vertical-align: top;
@@ -117,12 +112,12 @@
   padding: 10px 15px;
   text-align: center;
   display: block;
-  text-decoration: none;
 }
 
 .nav__items .nav__link {
   color: var(--shades);
   font-size: 0.99rem;
+  text-decoration: none;
 }
 
 .nav__items .nav__link:hover {

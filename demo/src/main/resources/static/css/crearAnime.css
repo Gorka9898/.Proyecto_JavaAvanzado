@@ -1,28 +1,4 @@
-/*-- BOTON DIA Y NOCHE --------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------- */
-#toggle {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  transform: scale(0.7);
-  background-color: white;
-  border-radius: 25px;
-  box-shadow: 3px 3px 8px #c4c4c4, -3px -3px 8px #fff;
-}
-
-body.active {
-  background-color: black;
-}
-
-body.active td {
-  color: black;
-}
-
+@charset "ISO-8859-1";
 /* ----- NAVBAR --------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------
@@ -280,62 +256,6 @@ body.active td {
   transform: translateY(0);
 }
 
-/*------MENU DE FILTROS---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------- */
-
-
-
-.dropbtn {
-  background-color: lightgrey;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: lightgrey}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: black;
-}
-
 
 
 /*------BODY---------------------------------------------------------------------------------
@@ -345,4 +265,90 @@ body.active td {
 -----------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------- */
 
-/*# sourceMappingURL=Directorio.css.map */
+		body {
+		    background-image: url("../img/login/darth_vader_dj.gif");
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    height: 100%;
+			
+		}
+		
+		.container{
+			display: flex; 
+			justify-content: center;
+		    align-content: center;
+		    margin-top: 25% 
+		   
+		}
+		td{
+		
+		color: white;
+		
+		}
+		.container form table tr:nth-child(4){
+		display:flex;
+		justify-content: center;
+		align-content: center;
+		}
+		
+		#profile-img {
+		    height:180px;
+		}
+		.h-80 {
+		    height: 80% !important;
+		}
+		
+		.formatoError{
+		color:red;
+		}
+		
+		.formatoLogout{
+		color:green;
+		font-weight:bold;
+		}
+		
+		#error3{
+		color:"red"
+		}
+		
+		#boton-submit{
+			
+			background-color: lightblue;
+			border-radius: 10px;
+		}
+		
+		
+		/*-- BOTON DIA Y NOCHE --------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+#toggle {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	transform: scale(.7);
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 3px 3px 8px #c4c4c4, 
+				-3px -3px 8px #fff;
+}
+
+body.active{
+	background-image: url("../img/login/homer.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body.active td{
+	color:black;
+}
+
+
+		
+
+	

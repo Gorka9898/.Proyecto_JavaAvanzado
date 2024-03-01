@@ -1,26 +1,32 @@
-/*-- BOTON DIA Y NOCHE --------------------------------------------------------------------------------------------------------------------
+@charset "ISO-8859-1";
+
+		
+		/*-- BOTON DIA Y NOCHE --------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
 #toggle {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  transform: scale(0.7);
-  background-color: white;
-  border-radius: 25px;
-  box-shadow: 3px 3px 8px #c4c4c4, -3px -3px 8px #fff;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	transform: scale(.7);
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 3px 3px 8px #c4c4c4, 
+				-3px -3px 8px #fff;
 }
 
-body.active {
-  background-color: black;
+body.active{
+	background-color: black;
 }
 
-body.active td {
-  color: black;
+body.active td{
+	color:black;
 }
 
 /* ----- NAVBAR --------------------------------------------------------------------------------
@@ -287,55 +293,85 @@ body.active td {
 -----------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------- */
 
-
-
-.dropbtn {
-  background-color: lightgrey;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
-  display: inline-block;
+  width: 230px;
+  filter: url(#goo);
+
+  &__face,
+  &__items {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  &__face {
+    display: block;
+    position: relative;
+  }
+
+  &__items {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+
+    &::before {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      bottom: 100%;
+      right: 20%;
+      height: 40px;
+      width: 20px;
+    }
+  }
+
+  &__arrow {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: right;
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ .dropdown__items {
+      top: calc(100% + 25px);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+body {
+  background-image: linear-gradient(140deg, #e2e2e2, #cdcdcd);
+  place-items: center;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+svg {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: lightgrey}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: black;
-}
-
 
 
 /*------BODY---------------------------------------------------------------------------------
@@ -345,4 +381,7 @@ body.active td {
 -----------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------- */
 
-/*# sourceMappingURL=Directorio.css.map */
+
+
+
+
