@@ -1,0 +1,588 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/css/Pruebas.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel='stylesheet' id='roboto-subset.css-css'
+	href='https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5'
+	type='text/css' media='all' />
+
+</head>
+<body>
+
+	<script>
+		window.onload = random_img;
+
+		var portadas = [ "86.jpg", "Avatar.jpg", "Barakamon.jpg",
+				"Belzebub.jpg", "Black_Lagoon.jpg", "Bocchi.jpg",
+				"Boku_no_hero3.jpg", "Bomberos.jpg", "Bomberos2.jpg",
+				"Chaika.jpg", "Charlotte.jpg", "Danmachi.jpg",
+				"Danmachi_3.jpg", "Death_note.jpg", "Dimension_W.jpg",
+				"Dororo.jpg", "Dr.Stone.jpg", "Dr.Stone2.jpg",
+				"Dragon_Maid.jpg", "Dungeon_no.jpg", "Erased.jpg",
+				"One_piece.jpg", "Escudo.jpg", "Fairy_Tail.jpg",
+				"Fairy_Tale.jpg", "Fate.jpg", "Full_Metal.jpg", "Gate.jpg",
+				"Gate2.jpg", "Genjitsu_Shugi.jpg", "Gente_Lista_el_Anime.jpg",
+				"Gente_Lista2.jpg", "Goblin_Slayer.jpg", "Grand_Blue.jpg",
+				"Hai_to_Gensou.jpg", "Haikyuu.jpg", "Haikyuu_top.jpg",
+				"Hunter_x_Hunter.jpg", "Hyouka.jpg", "Isekai_Ojisan.jpg",
+				"Itai_no_wa.jpg", "Jigokuraku.jpg", "Kaguya-sama.jpg",
+				"Kamisama_no_memou.jpg", "Kanata_no_Astra.jpg", "Karakai.jpg",
+				"kekkai.jpg", "Kimentsu.jpg", "Kimetsu.jpg", "Kingdom4.jpg",
+				"Kishuku.jpg", "Kobayashi.jpg", "Konosuba.jpg",
+				"Konosuba2.jpg", "Log_Horizon_2.jpg", "Log_hotizon.jpg",
+				"Made_in_Abyss.jpg", "Mahotsukai_no_Yome.jpg",
+				"mahotsukai_no_yome2.jpg", "Mahou_no_tabita.jpg",
+				"Mahouka.jpg", "mahouka_koukou.jpg", "Dragon_ball_z.jpg",
+				"Maou_Gakuen.jpg", "Mieruko.jpg", "Mob_Psycho.jpg",
+				"Mushoku_Tensei.jpg", "Musoku_Tensou2.jpg", "Nanbaka.jpg",
+				"One_punch_man.jpg", "Oregairu.jpg", "Orfanato.jpg",
+				"Osi_no_ko.jpg", "Overlord.jpg", "Overlord2.jpg",
+				"Owari_no_seraph.jpg", "Plastic_Memories.jpg", "Re_Zero2.jpg",
+				"Rewrite.jpg", "Sakamoto.jpg", "SAO_Alicization.jpg",
+				"Sasageio.jpg", "School_Prison.jpg",
+				"Shingeki_no_sasageio.jpg", "Bleach.jpg", "Singeki.jpg",
+				"Slime.jpg", "Slime2.jpg", "Spy_x_Family.jpg",
+				"Steins_Gate.jpg", "Strai_Dogs.jpg", "Stray_Dogs_4.jpg",
+				"Suspendi_caldo_de_pollo.jpg", "Tengen_topan.jpg",
+				"Tensai_Ouji.jpg", "tsuki_ga_michibu.jpg", "Uchi_no_ko.jpg",
+				"Ushio_no_Tora.jpg", "naruto.jpg", "Vinland.jpg",
+				"Violet_Evergarden.jpg", "Youjou_Senki.jpg",
+				"Youjou_Senki2.jpg", "Jujutsu.jpg", ]
+
+		function random_img() {
+
+			var rand = 0;
+
+			for (var j = 0; j <= 27; j++) {
+
+				rand = Math.floor(Math.random() * (portadas.length - 1) + 1);
+				console.log(rand);
+				rand = portadas[rand];
+				console.log(rand);
+				document.getElementsByTagName("img")[j].src = 'img/Portadas/'
+						+ rand;
+
+			}
+
+		}
+
+		setInterval(random_img, 5000);
+	</script>
+
+
+	<header class="header">
+		<section class="section1">
+
+
+			<div class="leaf">
+				<div></div>
+				<div>
+					<img src="img/Portadas/Dororo.jpg" height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Dororo.jpg" height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Dororo.jpg" height="125px" width="125px">
+				</div>
+
+			</div>
+
+
+
+			<div class="leaf leaf2">
+				<div>
+					<img src="img/Portadas/Dororo.jpg" height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png"
+						height="125px" width="125px"></img>
+				</div>
+
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png"
+						height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img
+						src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png"
+						height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Dororo.jpg" height="125px" width="125px">
+				</div>
+
+			</div>
+			<h2>My Series</h2>
+		</section>
+
+	</header>
+
+	<nav class="sticky navbar">
+		<div class="brand  display__logo d-flex align-items-center">
+			<a href="#top" class="nav__link"> <span class="logo">My
+					Series</span></a>
+					<a href="/series" class="nav__link" id="enlace-Series"> Series </a>
+					
+		</div>
+
+		<input type="checkbox" id="nav" class="hidden" /> <label for="nav"
+			class="nav__open"><i></i><i></i><i></i></label>
+		<div class="nav">
+			<ul class="nav__items">
+				<li class="nav__item"><a href="#home" class="nav__link">Top
+						11</a></li>
+				<li class="nav__item"><a href="#portfolio" class="nav__link" id="nav_link">Gachapon</a></li>
+				<li class="nav__item"><a href="/directorio" class="nav__link">Directorio</a></li>
+				<li class="nav__item"><a href="formularioLogin"
+					class="nav__link">Login</a></li>
+				<li class="nav__item"><a href="formularioRegister"
+					class="nav__link">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--  SCRIPT --------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------->
+
+	</script>
+
+
+	<script>
+		window.onload = inicio
+
+		function inicio() {
+
+			const data = null;
+			console.log("lo hace");
+			var rand = document.getElementById("boton-random");
+			rand.addEventListener('click', random);
+			console.log("lo hace");
+			const xhr = new XMLHttpRequest();
+			xhr.withCredentials = true;
+
+			xhr
+					.open(
+							'GET',
+							'https://anime-db.p.rapidapi.com/anime?page=1&size=1111&sortBy=ranking&sortOrder=asc');
+			xhr.setRequestHeader('X-RapidAPI-Key',
+					'71bba98e70msh76a293c003df868p15bba0jsnb15000a30aa7');
+			xhr.setRequestHeader('X-RapidAPI-Host', 'anime-db.p.rapidapi.com');
+			xhr.send(data);
+
+			xhr
+					.addEventListener('readystatechange',
+							function() {
+								if (this.readyState === this.DONE) {
+									var datos = JSON.parse(this.responseText);
+									console.log(datos);
+
+									//Top 11 Animes
+									for (var i = 0; i <= 10; i++) {
+
+										var img = datos.data[i].image;
+										var titulo = datos.data[i].title;
+										var genero = datos.data[i].genres;
+
+										var juntar = "imTop" + i;
+										var juntarTitulo = "titleTop" + i;
+
+										var imagenTop = document
+												.getElementById(juntar);
+										var imagenTopTitulo = document
+												.getElementById(juntarTitulo);
+
+										imagenTop.src = img;
+
+										imagenTopTitulo.innerHTML = titulo;
+										imagenTopTitulo.innerHTML += "<p>"
+												+ genero[0] + "</p>";
+										console.log(genero);
+
+									}
+
+									//Imagen random
+
+									var random = Math
+											.floor(Math.random() * 1110);
+
+									console.log(random);
+
+									var img = datos.data[random].image;
+									var titulo = datos.data[random].title;
+									var genero = datos.data[random].genres;
+
+									var imagenTop = document
+											.getElementById("imgRandom");
+
+									var imagenTopTitulo = document
+											.getElementById("tituloRandom");
+
+									imagenTop.src = img;
+
+									imagenTopTitulo.innerHTML = titulo;
+									imagenTopTitulo.innerHTML += "<p>"
+											+ genero[0] + "</p>";
+									console.log("lo hace");
+								}
+							});
+
+			function random() {
+
+				console.log("Dentro");
+
+				const data = null;
+
+				const xhr = new XMLHttpRequest();
+				xhr.withCredentials = true;
+
+				xhr
+						.open(
+								'GET',
+								'https://anime-db.p.rapidapi.com/anime?page=1&size=1111&sortBy=ranking&sortOrder=asc');
+				xhr.setRequestHeader('X-RapidAPI-Key',
+						'71bba98e70msh76a293c003df868p15bba0jsnb15000a30aa7');
+				xhr.setRequestHeader('X-RapidAPI-Host',
+						'anime-db.p.rapidapi.com');
+				xhr.send(data);
+
+				xhr.addEventListener('readystatechange',
+						function() {
+							if (this.readyState === this.DONE) {
+
+								var datos = JSON.parse(this.responseText);
+								console.log(datos);
+
+								//Imagen random
+
+								var random = Math.floor(Math.random() * 1110);
+
+								console.log(random);
+
+								var img = datos.data[random].image;
+								var titulo = datos.data[random].title;
+								var genero = datos.data[random].genres;
+
+								var imagenTop = document
+										.getElementById("imgRandom");
+
+								var imagenTopTitulo = document
+										.getElementById("tituloRandom");
+
+								imagenTop.src = img;
+
+								imagenTopTitulo.innerHTML = titulo;
+								imagenTopTitulo.innerHTML += "<p>" + genero[0]
+										+ "</p>";
+
+							}
+						});
+
+			}
+
+		}
+	</script>
+
+
+
+	<!--  BODY --------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------->
+
+	<main>
+		<section class="home">
+			<div id="home">
+				<div class="inicio">
+					<figure>
+						<img id="" src="img/anime-adicionales/top11.jpg" height="100%"
+							width="100%" alt="Mountains">
+						<figcaption id="">
+							Top Animes
+							<p>Animes con la mejor valoracion en el ranking</p>
+						</figcaption>
+					</figure>
+					<a href="/datosSerie"><figure>
+							<img id="imTop0" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop0">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop1" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop1">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop2" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop2">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop3" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop3">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop4" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop4">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop5" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop5">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop6" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop6">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop7" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop7">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop8" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop8">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop9" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop9">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a> <a href="/datosSerie"><figure>
+							<img id="imTop10" src="img/Portadas/Bomberos.jpg" height="100%"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop10">
+								The Day
+								<p>Descripcion</p>
+							</figcaption>
+						</figure></a>
+		</section>
+		<section class="about">
+
+
+			<div id="about"></div>
+		</section>
+		<section class="portfolio">
+			<div id="portfolio">
+				<div id="home">
+
+					<div class="random">
+
+						<div id="div-imgRandom">
+
+							<h3>Random anime</h3>
+							<figure id="random-fig">
+								<img id="imgRandom" src="img/Portadas/Bomberos.jpg"
+									height="100%" width="100%" alt="Mountains">
+								<figcaption id="tituloRandom">
+									The Day
+									<p>Descripcion</p>
+								</figcaption>
+							</figure>
+							<button id="boton-random" onclick="random">Re-roll</button>
+						</div>
+
+
+					</div>
+				</div>
+		</section>
+
+
+
+	</main>
+
+
+
+	<footer class="footer">
+		<div id="container-footer">
+
+			<div id="footer-div1">
+				<h3 id="interes">Posibles sitios de interes</h3>
+				<ul>
+					<li><a class="footer-links"
+						href="https://www.crunchyroll.com/es-es/">Crunchyroll</a></li>
+					<li><a class="footer-links" href="https://www1.otakustv.com/">Otakustv</a></li>
+					<li><a class="footer-links" href="https://www3.animeflv.net/">Animeflv</a></li>
+					<li><a class="footer-links" href="https://somoskudasai.com/">Somoskudasai</a></li>
+					<li><a class="footer-links"
+						href="https://www.mundodonghua.com/">Mundodonghua</a></li>
+				</ul>
+
+
+
+
+
+			</div>
+			<div id="footer-div2">
+				<h3 id="redes-sociales">Nuestras redes sociales</h3>
+				<ul>
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+						style="background-color: #3b5998;" href="#!" role="button"><i
+						class="fab fa-facebook-f"></i></a>
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+						style="background-color: #55acee;" href="#!" role="button"><i
+						class="fab fa-twitter"></i></a>
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+						style="background-color: #dd4b39;" href="#!" role="button"><i
+						class="fab fa-google"></i></a>
+				</ul>
+
+				<ul>
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+						style="background-color: #ac2bac;" href="#!" role="button"><i
+						class="fab fa-instagram"></i></a>
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+						style="background-color: #0082ca;" href="#!" role="button"><i
+						class="fab fa-linkedin-in"></i></a>
+
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+						style="background-color: #333333;" href="#!" role="button"><i
+						class="fab fa-github"></i></a>
+				</ul>
+
+			</div>
+
+
+		</div>
+
+
+	</footer>
+
+
+</body>
+</html>

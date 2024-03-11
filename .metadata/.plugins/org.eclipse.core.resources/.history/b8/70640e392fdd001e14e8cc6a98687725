@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/css/crearAnime.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel='stylesheet' id='roboto-subset.css-css'
+	href='https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5'
+	type='text/css' media='all' />
+</head>
+
+
+<body>
+
+	<nav class="sticky navbar">
+		<div class="brand  display__logo d-flex align-items-center">
+			<a href="#top" class="nav__link"> <span class="logo">My
+					Series</span></a>
+					<a href="/series" class="nav__link" id="enlace-Series"> Series </a>
+					
+		</div>
+
+		<input type="checkbox" id="nav" class="hidden" /> <label for="nav"
+			class="nav__open"><i></i><i></i><i></i></label>
+		<div class="nav">
+			<ul class="nav__items">
+				<li class="nav__item"><a href="#home" class="nav__link">Top
+						11</a></li>
+				<li class="nav__item"><a href="#portfolio" class="nav__link" id="nav_link">Gachapon</a></li>
+				<li class="nav__item"><a href="/directorio" class="nav__link">Directorio</a></li>
+				<li class="nav__item"><a href="formularioLogin"
+					class="nav__link">Login</a></li>
+				<li class="nav__item"><a href="formularioRegister"
+					class="nav__link">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+<form   class="form-signin" action="#" th:action="@{/procesarCrearAnime}" th:object="${anime}" method="post">
+        	<table>
+            	<tr>
+                	<td><input type="text" th:field="*{nombre}" placeholder="Nombre" /></td>
+                	<td th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}" class="errores">Name Error</td>
+            	</tr>
+            	<tr>
+                	<td><input type="text" th:field="*{genero}" placeholder="Genero" /></td>
+                	<td th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}" class="errores">Genre Error</td>
+            	</tr>
+            	<tr>
+                	<td><input type="text" th:field="*{estado}" placeholder="Estado" /></td>
+                	<td th:if="${#fields.hasErrors('estado')}" th:errors="*{estado}" id="error3">Status Error</td>
+            	</tr>
+            	<tr>
+                	<td><button id="boton-submit" type="submit">Submit</button></td>
+            	</tr>
+        	</table>
+    	</form>
+
+
+</body>
+
+
+</html>

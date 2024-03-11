@@ -1,0 +1,26 @@
+package com.example.demo.cotrolador;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .authorizeHttpRequests()
+                .anyRequest().authenticated();
+        http
+                .formLogin();
+
+        return http.build();
+    }
+
+    @SuppressWarnings("deprecation")
+    @Bean
+    public NoOpPasswordEncoder passwordEncoder() {
+        return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
+    }
+
+}

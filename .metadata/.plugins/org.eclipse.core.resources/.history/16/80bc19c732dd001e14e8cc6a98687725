@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/Login.css">
+</head>
+
+
+<body>
+
+	<nav class="sticky navbar">
+		<div class="brand  display__logo d-flex align-items-center">
+			<a href="#top" class="nav__link"> <span class="logo">My
+					Series</span></a> <a href="/series" class="nav__link" id="enlace-Series">
+				Series </a>
+
+		</div>
+
+		<input type="checkbox" id="nav" class="hidden" /> <label for="nav"
+			class="nav__open"><i></i><i></i><i></i></label>
+		<div class="nav">
+			<ul class="nav__items">
+				<li class="nav__item"><div id="toggle"></div></li>
+				<li class="nav__item"><a href="/directorio" class="nav__link">Directorio</a></li>
+				<li class="nav__item"><a href="formularioLogin"
+					class="nav__link">Login</a></li>
+				<li class="nav__item"><a href="formularioRegister"
+					class="nav__link">Register</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<form class="form-signin" action="#" th:action="@{/procesarCrearAnime}"
+		th:object="${anime}" method="post">
+		<table>
+			<tr>
+				<td><input type="text" th:field="*{estado}"
+					placeholder="Estado" /></td>
+				<td th:if="${#fields.hasErrors('estado')}" th:errors="*{estado}"
+					id="error3">Status Error</td>
+			</tr>
+			<tr>
+				<td><input type="text" th:field="*{nombre}"
+					placeholder="Nombre" /></td>
+				<td th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"
+					class="errores">Name Error</td>
+			</tr>
+			<tr>
+				<td><input type="text" th:field="*{genero}"
+					placeholder="Genero" /></td>
+				<td th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}"
+					class="errores">Genre Error</td>
+			</tr>
+			<tr>
+				<td><input type="text" th:field="*{puntuacion}"
+					placeholder="Estado" /></td>
+				<td th:if="${#fields.hasErrors('puntuacion')}"
+					th:errors="*{puntuacion}" id="error3">Status Error</td>
+			</tr>
+			<tr>
+				<td><input type="textArea" th:field="*{sinopsis}"
+					placeholder="Sinopsis" /></td>
+				<td th:if="${#fields.hasErrors('sinopsis')}" th:errors="*{sinopsis}"
+					id="error3">Status Error</td>
+			</tr>
+
+			<tr>
+				<td><button id="boton-submit" type="submit">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+
+
+</html>
