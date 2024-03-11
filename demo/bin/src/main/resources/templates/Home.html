@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="/css/Home.css">
+</head>
+	<body>
+	
+	<div class="navbar">
+		<nav>
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="#directorio">Directorio</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+				<li><a href="formularioLogin">Login</a></li>
+				<li><a href="formularioRegister">Register</a></li>
+			</ul>
+		</nav>
+	</div>
+		
+	<script>
+    	window.onload
+    	
+    	
+    	
+    	var portadas=["86.jpg", "Avatar.jpg", "Barakamon.jpg", "Belzebub.jpg",
+    		"Black_Lagoon.jpg", "Bocchi.jpg", "Boku_no_hero3.jpg", "Bomberos.jpg",
+    		"Bomberos2.jpg", "Chaika.jpg", "Charlotte.jpg", "Danmachi.jpg", "Danmachi_3.jpg",
+    		"Death_note.jpg", "Dimension_W.jpg", "Dororo.jpg", "Dr.Stone.jpg",
+    		"Dr.Stone2.jpg", "Dragon_Maid.jpg", "Dungeon_no.jpg", "Erased.jpg",
+    		"One_piece.jpg", "Escudo.jpg", "Fairy_Tail.jpg", "Fairy_Tale.jpg", "Fate.jpg",
+    		"Full_Metal.jpg", "Gate.jpg", "Gate2.jpg", "Genjitsu_Shugi.jpg",
+    		"Gente_Lista_el_Anime.jpg", "Gente_Lista2.jpg", "Goblin_Slayer.jpg",
+    		"Grand_Blue.jpg", "Hai_to_Gensou.jpg", "Haikyuu.jpg", "Haikyuu_top.jpg",
+    		"Hunter_x_Hunter.jpg", "Hyouka.jpg", "Isekai_Ojisan.jpg", "Itai_no_wa.jpg",
+    		"Jigokuraku.jpg", "Kaguya-sama.jpg", "Kamisama_no_memou.jpg",
+    		"Kanata_no_Astra.jpg", "Karakai.jpg", "kekkai.jpg", "Kimentsu.jpg",
+    		"Kimetsu.jpg", "Kingdom4.jpg", "Kishuku.jpg", "Kobayashi.jpg", "Konosuba.jpg",
+    		"Konosuba2.jpg", "Log_Horizon_2.jpg", "Log_hotizon.jpg", "Made_in_Abyss.jpg",
+    		"Mahotsukai_no_Yome.jpg", "mahotsukai_no_yome2.jpg", "Mahou_no_tabita.jpg",
+    		"Mahouka.jpg", "mahouka_koukou.jpg", "Dragon_ball_z.jpg", "Maou_Gakuen.jpg",
+    		"Mieruko.jpg", "Mob_Psycho.jpg", "Mushoku_Tensei.jpg", "Musoku_Tensou2.jpg",
+    		"Nanbaka.jpg", "One_punch_man.jpg", "Oregairu.jpg", "Orfanato.jpg",
+    		"Osi_no_ko.jpg", "Overlord.jpg", "Overlord2.jpg", "Owari_no_seraph.jpg", 
+    		"Plastic_Memories.jpg", "Re_Zero2.jpg", "Rewrite.jpg", "Sakamoto.jpg",
+    		"SAO_Alicization.jpg", "Sasageio.jpg", "School_Prison.jpg",
+    		"Shingeki_no_sasageio.jpg", "Bleach.jpg", "Singeki.jpg", "Slime.jpg",
+    		"Slime2.jpg", "Spy_x_Family.jpg", "Steins_Gate.jpg", "Strai_Dogs.jpg",
+    		"Stray_Dogs_4.jpg", "Suspendi_caldo_de_pollo.jpg", "Tengen_topan.jpg",
+    		"Tensai_Ouji.jpg", "tsuki_ga_michibu.jpg", "Uchi_no_ko.jpg",
+    		"Ushio_no_Tora.jpg", "naruto.jpg", "Vinland.jpg", "Violet_Evergarden.jpg",
+    		"Youjou_Senki.jpg", "Youjou_Senki2.jpg", "Jujutsu.jpg", ]
+    	
+    	function random_img(){
+    		
+    		var rand = 0;
+    		
+    		for(var j= 0; j<=27; j++){
+    		
+    		rand = Math.floor(Math.random()* (portadas.length - 1)+ 1);
+    		console.log(rand);
+    		rand= portadas[rand];
+    		console.log(rand);
+    		document.getElementsByTagName("img")[j].src='img/Portadas/'+ rand;
+    		
+    		}
+    		
+    	}
+    	
+    	setInterval(random_img, 5000);
+    	</script>
+    	
+    <div class=" container ">
+	<div class="padre">
+        
+    <section class="section1">
+
+  
+     <div class="leaf">
+     <div>  </div>
+      <div><img src="img/Portadas/Dororo.jpg"  height="125px" width="125px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="125px" width="125px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="125px" width="125px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="125px" width="125px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="125px" width="125px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+          <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                      <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="125px" width="125px"></div>
+                <div>  <img src="img/Portadas/Dororo.jpg"  height="125px" width="125px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="125px" width="125px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="125px" width="125px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="125px" width="125px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="125px" width="125px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="125px" width="125px"></div>
+     <div><img src="img/Portadas/Dororo.jpg"  height="125px" width="125px"></div>
+        
+     </div>
+     
+
+     
+     <div class="leaf leaf2">
+     <div>  <img src="img/Portadas/Dororo.jpg"  height="125px" width="125px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="125px" width="125px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="125px" width="125px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="125px" width="125px"></img></div>
+
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="125px" width="125px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="125px" width="125px"></div>
+     <div><img src="img/Portadas/Dororo.jpg"  height="125px" width="125px"></div>
+            
+     </div>
+         <h2>
+       Siuuuuuuu!!!
+      </h2>
+     </section>
+     </div>
+     
+     
+     <div class="contenido-transparente">
+     	
+     	
+     </div>
+     
+     <footer>
+     
+     </footer>
+    	
+    	
+    	</div>
+	</body>
+</html>

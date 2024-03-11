@@ -11,7 +11,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Anime extends Series implements Serializable{
@@ -31,9 +30,7 @@ public class Anime extends Series implements Serializable{
 	
 	private String imagen;
 	
-	@NotBlank
 	private String sinopsis;
-	
 	
 	@ManyToMany(fetch =FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<User>usuarios;

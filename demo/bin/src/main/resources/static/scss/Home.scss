@@ -1,0 +1,232 @@
+
+body{
+	background-color:black;
+	background:radial-gradient(#333,#000);
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+
+}
+nav{
+	list-style: none;
+		text-decoration: none;
+	ul{
+		list-style: none;
+		text-decoration: none;
+		display: flex;
+	}
+	
+	li{
+		width: 15%;
+	}
+
+	
+}
+
+
+.padre {
+margin:0;
+padding:0;
+background-color:black;
+}
+
+
+section{
+height:100%;
+width:100%;
+background:radial-gradient(#333,#000);
+}
+
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 30s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-16s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:85%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-19s;
+}
+.leaf div:nth-child(8){
+    left:25%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-12s;
+}
+.leaf div:nth-child(9){
+    left:0%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-7s;
+}
+.leaf div:nth-child(10){
+    left:90%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(11){
+    left:80%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-6s;
+}
+.leaf div:nth-child(12){
+    left:70%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-9s;
+}
+.leaf div:nth-child(13){
+    left:60%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-20s;
+}
+.leaf div:nth-child(14){
+    left:50%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-3s;
+}
+.leaf div:nth-child(15){
+    left:40%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-6s;
+}
+.leaf div:nth-child(16){
+    left:30%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-15s;
+}
+.leaf div:nth-child(17){
+    left:20%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-25s;
+}
+.leaf div:nth-child(18){
+    left:25%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:0s;
+}
+.leaf div:nth-child(19){
+    left:68%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-11s;
+}
+.leaf div:nth-child(20){
+    left:16%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-12s;
+}
+.leaf div:nth-child(21){
+    left:53%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(22){
+    left:77%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-22s;
+}
+.leaf div:nth-child(23){
+    left:46%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-19s;
+}
+.leaf div:nth-child(24){
+    left:87%; 
+    animation:fall 30s linear infinite ;
+    animation-delay:-13s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-0%;
+        transform:translateX (20px) ;
+    }
+
+    100%{
+        
+       	top:210%;
+       	transform:translateX (200px) ;
+    }
+    }
+
+h2{
+    position:absolute ;
+    top:40%;
+    width:90%;
+    font-family: 'Courgette', cursive;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
+}
+
+.padre{
+	width:100%;
+	height:35rem;
+}
+.contenido-transparente{
+	position: relative;
+	z-index: 30;
+	width: 100%;
+	height: 500px;
+	margin-top:150px;
+	background-color:white;
+	color: white;
+	border-radius: 5pxº;
+}
+
+footer{
+	position: absolute;
+	width: 88%;
+	border-radius: 5px;
+	height: 100px;
+	background-color: white;
+	margin-top: 20px;
+}
