@@ -278,13 +278,11 @@
 		    margin-top: 25% 
 		   
 		}
-		
-		tr {
+		tr{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		}
-		
 		td{
 		
 		color: white;

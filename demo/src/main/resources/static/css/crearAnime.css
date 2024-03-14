@@ -266,7 +266,7 @@
 --------------------------------------------------------------------------------------- */
 
 		body {
-		    background-image: url("../img/login/darth_vader_dj.gif");
+		    background-color: black;
 		    background-repeat: no-repeat;
 		    background-size: cover;
 		    height: 100%;
@@ -276,9 +276,15 @@
 		.container{
 			display: flex; 
 			justify-content: center;
-		    align-content: center;
+		    align-items: center;
 		    margin-top: 25% 
 		   
+		}
+		form{
+			display: flex; 
+			justify-content: center;
+		    align-items: center;
+		    margin-top: 20px;
 		}
 		td{
 		
@@ -339,13 +345,12 @@
 }
 
 body.active{
-	background-image: url("../img/login/homer.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: white;
+
 }
 
 body.active td{
-	color: black;
+	color:black;
 }
 
 

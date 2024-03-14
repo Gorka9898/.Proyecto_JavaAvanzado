@@ -46,21 +46,26 @@
 	
 	<div class="container-fluid">
 	
-	<div id="menu">
+    
+    <div id="home">
+				<div class="inicio">
+	<div th:each="animes : ${anime}">
 	
-<div class="dropdown">
-  <button class="dropbtn">Genero</button>
-  <div class="dropdown-content">
-    <a href="#">Accion</a>
-    <a href="#">Aventura</a>
-    <a href="#">Ciencia-Ficcion</a>
-  </div>
-</div>
-	
-	</div>
-	
+	<a href="/datosSerie"><figure>
+							<img id="imTop0" th:src="${animes.imagen}"  height="330px"
+								width="100%" alt="Mountains">
+							<figcaption id="titleTop0">
+								<h1  th:text="${animes.nombre}"></h1>
+								<p th:text="${animes.genero}"></p>
+							</figcaption>
+						</figure></a>
 			
-	
+	 </div>
+	 
+	 </div>
+	 </div>
+	 
+	 
 	</div>
 
 

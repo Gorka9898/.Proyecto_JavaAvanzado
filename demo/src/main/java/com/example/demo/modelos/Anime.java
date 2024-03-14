@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -11,6 +12,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Anime extends Series implements Serializable{
@@ -28,8 +31,11 @@ public class Anime extends Series implements Serializable{
 	
 	private String estado;
 	
+	@NotBlank
 	private String imagen;
 	
+	@Column(length = 5000)
+	@NotBlank
 	private String sinopsis;
 	
 	@ManyToMany(fetch =FetchType.LAZY, cascade = CascadeType.ALL)
@@ -39,8 +45,8 @@ public class Anime extends Series implements Serializable{
 		super();
 	}
 
-	public Anime(Long id, String nombre, String genero, int puntuacion, int episodios,
-			String estado, String imagen, String sinopsis) {
+	public Anime(Long id, String genero, String nombre, int episodios, String estado, String imagen, int puntuacion,
+			 String sinopsis) {
 		super(nombre, genero);
 		this.puntuacion = puntuacion;
 		this.episodios = episodios;

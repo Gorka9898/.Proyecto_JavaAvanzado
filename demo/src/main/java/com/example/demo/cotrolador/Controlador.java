@@ -1,28 +1,67 @@
 package com.example.demo.cotrolador;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseCookie;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+
 
 import com.example.demo.modelos.Anime;
+import com.example.demo.modelos.ERole;
+import com.example.demo.modelos.Role;
 import com.example.demo.modelos.User;
+import com.example.demo.repositorios.AnimeRepository;
+import com.example.demo.repositorios.RoleRepository;
 import com.example.demo.repositorios.UserRepository;
+import com.example.demo.requests.LoginRequest;
+import com.example.demo.requests.SignupRequest;
+import com.example.demo.responses.MessageResponse;
+import com.example.demo.responses.UserInfoResponse;
+import com.example.demo.security.jwt.JwtUtils;
 import com.example.demo.service.AnimeService;
-import com.example.demo.service.UserService;
+import com.example.demo.service.UserDetailsImpl;
+
 
 import jakarta.validation.Valid;
 
 @Controller
 public class Controlador {
+	
+	  @Autowired
+	  AuthenticationManager authenticationManager;
 
-	@Autowired
-	private UserService service;
+	  @Autowired
+	  UserRepository userRepository;
+
+	  @Autowired
+	  RoleRepository roleRepository;
+	  
+	  @Autowired
+	  AnimeRepository animeRepository;
+
+	  @Autowired
+	  PasswordEncoder encoder;
+
+	  @Autowired
+	  JwtUtils jwtUtils;
 
 	@Autowired
 	private AnimeService serviceA;
@@ -40,20 +79,23 @@ public class Controlador {
 	}
 
 	@GetMapping("/formularioLogin")
-	public String Login(Model m) {
+	public String Login(Model m, ModelMap mp) {
 		m.addAttribute("user", new User());
+		mp.addAttribute("roles", roleRepository.findAll());
 		return "Formulario";
 	}
 
 	@GetMapping("/formularioRegister")
-	public String Register(Model m) {
+	public String Register(Model m, ModelMap mp) {
 		m.addAttribute("user", new User());
+		mp.addAttribute("roles", roleRepository.findAll());
 		return "Formulario";
 	}
 
 	@GetMapping("/directorio")
 	public String verDirectorio(Model m) {
 		m.addAttribute("user", new User());
+		m.addAttribute("anime", animeRepository.findAll());
 		return "Directorio";
 	}
 
@@ -75,16 +117,6 @@ public class Controlador {
 		} else {
 			serviceA.crearAnime(use);
 			m.addAttribute("user", new User());
-			return "Pruebas";
-		}
-	}
-
-	@RequestMapping("/processForm")
-	public String showCustomerData(@Valid @ModelAttribute("user") User use, BindingResult thebindingresult) {
-		if (thebindingresult.hasErrors()) {
-			return "Formulario";
-		} else {
-			service.crearUsuario(use);
 			return "Pruebas";
 		}
 	}
