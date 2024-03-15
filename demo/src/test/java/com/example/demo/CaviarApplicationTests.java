@@ -86,7 +86,7 @@ class CaviarApplicationTests {
 		Anime anim15 = new Anime(new Long(15), "AVENTURA", "One Piece", 28, "FINALIZADO", "img/Portadas/One_piece.jpg", 9, "Aqui iria la descripcion");
 		animeRepository.save(anim15);
 
-		Anime anim16 = new Anime(new Long(16), "AVENTURA", "Singeki no Kyojin", 28, "FINALIZADO", "img/Portadas/Singeki.jpg", 9, "Aqui iria la descripcion");
+		Anime anim16 = new Anime(new Long(16), "AVENTURA", "Singeki no Kyojin", 28, "FINALIZADO", "imgPortadas-series/breaking-bad.jpg", 9, "Aqui iria la descripcion");
 		animeRepository.save(anim16);
 
 	}
@@ -95,8 +95,35 @@ class CaviarApplicationTests {
 	@Test
 	void contextLoadsSeries() {
 		serieRepository.deleteAll();
-		Serie serie1 = new Serie(new Long(1), "AVENTURA", "Singeki no Kyojin", 28, "FINALIZADO", "img/Portadas/Singeki.jpg", 9, "Aqui iria la descripcion");
+		Serie serie1 = new Serie(new Long(1), "DRAMA", "Breaking Bad", 28, "FINALIZADO", "img/Portadas-series/breaking-bad.jpg", 9, "Aqui iria la descripcion");
 		serieRepository.save(serie1);
+		
+		Serie serie2 = new Serie(new Long(2), "TERROR", "Dark", 28, "FINALIZADO", "img/Portadas-series/dark.jpg", 8, "Aqui iria la descripcion");
+		serieRepository.save(serie2);
+		
+		Serie serie3 = new Serie(new Long(3), "DRAMA", "El Silencio", 28, "FINALIZADO", "img/Portadas-series/el-silencio.jpg", 6, "Aqui iria la descripcion");
+		serieRepository.save(serie3);
+		
+		Serie serie4 = new Serie(new Long(4), "DRAMA", "Golden Age", 28, "FINALIZADO", "img/Portadas-series/golden_age.jpg", 8, "Aqui iria la descripcion");
+		serieRepository.save(serie4);
+		
+		Serie serie5 = new Serie(new Long(5), "MISTERIO", "Los 100", 28, "FINALIZADO", "img/Portadas-series/los-100.jpg", 9, "Aqui iria la descripcion");
+		serieRepository.save(serie5);
+		
+		Serie serie6 = new Serie(new Long(6), "ACCION", "Outlander", 28, "FINALIZADO", "img/Portadas-series/outlander.jpg", 6, "Aqui iria la descripcion");
+		serieRepository.save(serie6);
+		
+		Serie serie7 = new Serie(new Long(7), "ACCION", "The Last of Us", 28, "FINALIZADO", "img/Portadas-series/the_last_of_us.jpg", 7, "Aqui iria la descripcion");
+		serieRepository.save(serie7);
+		
+		Serie serie8 = new Serie(new Long(8), "DRAMA", "The Undoing", 28, "FINALIZADO", "img/Portadas-series/the_undoing.jpg", 5, "Aqui iria la descripcion");
+		serieRepository.save(serie8);
+		
+		Serie serie9 = new Serie(new Long(9), "DRAMA", "Tower", 28, "FINALIZADO", "img/Portadas-series/tower.jpg", 7, "Aqui iria la descripcion");
+		serieRepository.save(serie9);
+		
+		Serie serie10 = new Serie(new Long(10), "ACCION", "Warrior", 28, "FINALIZADO", "img/Portadas-series/warrior.jpg", 8, "Aqui iria la descripcion");
+		serieRepository.save(serie10);
 	
 	}
 

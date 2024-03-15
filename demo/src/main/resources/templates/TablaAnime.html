@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="/css/crearAnime.css">
+</head>
+
+
+<body>
+
+	<nav class="sticky navbar">
+		<div class="brand  display__logo d-flex align-items-center">
+			<a href="#top" class="nav__link"> <span class="logo">My
+					Series</span></a> 
+
+		</div>
+
+		<input type="checkbox" id="nav" class="hidden" /> <label for="nav"
+			class="nav__open"><i></i><i></i><i></i></label>
+		<div class="nav">
+			<ul class="nav__items">
+				
+				
+				<li class="nav__item"><a href="/tablaSeries"
+					class="nav__link">Lista Series</a></li>
+				<li class="nav__item"><a href="/admin"
+					class="nav__link">Admin</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+	<div class="">
+		<h1>Lista de Usuarios</h1>
+
+		<table class="table">
+			
+				<tr>
+					<th>Id</th>
+					<th>Nombre</th>
+					<th>Genero</th>
+					<th>Sinopsis</th>
+				</tr>
+
+				<div th:each="animes : ${anime}">
+					<tr>
+						<th th:text="${animes.id}"></th>
+						<th th:text="${animes.nombre}"></th>
+						<th th:text="${animes.genero}"></th>
+						<th th:text="${animes.sinopsis}"></th>
+						<th>                    
+						
+						 </th>
+					</tr>
+
+				</div>
+		
+
+		</table>
+	</div>
+
+
+
+</body>
+
+
+</html>

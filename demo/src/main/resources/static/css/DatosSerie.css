@@ -297,6 +297,11 @@ body.active td {
 .ElGrid {
   padding: 20px;
   border: 1px solid #ccc;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 
 }
 

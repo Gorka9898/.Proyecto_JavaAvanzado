@@ -24,7 +24,7 @@
 
 		<nav class="sticky navbar">
 		<div class="brand  display__logo">
-			<a href="/" class="nav__link"> <span class="logo">My
+			<a href="/loged" class="nav__link"> <span class="logo">My
 					Series</span></a>
 		</div>
 
@@ -33,12 +33,9 @@
 		<div class="nav">
 			<ul class="nav__items">
 				<li  class="nav__item"><div id="toggle"></div></li>
-				<li class="nav__item"><a href="/" class="nav__link">Inicio</a></li>
-				<li class="nav__item"><a href="/directorio" class="nav__link">Directorio</a></li>
-				<li class="nav__item"><a href="formularioLogin"
-					class="nav__link">Login</a></li>
-				<li class="nav__item"><a href="formularioRegister"
-					class="nav__link">Register</a></li>
+				<li class="nav__item"><a href="/seriesLoged" class="nav__link">Inicio</a></li>
+				<li class="nav__item"><a href="/directorioSeriesLoged" class="nav__link">Directorio</a></li>
+				<li class="nav__item"><a href="/signout"class="nav__link">Log Out</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -49,16 +46,17 @@
     
     <div id="home">
 				<div class="inicio">
-					<div th:each="animes : ${anime}">
-					<form class="form-signin" action="#" th:action="@{/datosSerieAnime}"
-						th:object="${anime}" method="get">
-						<input type="hidden" name="id" th:value="${animes.id}">
+	<div th:each="series : ${serie}">
+					<form class="form-signin" action="#" th:action="@{/datosSerie}"
+						th:object="${serie}" method="get">
+
+						<input type="hidden" name="id" th:value="${series.id}">
 						<figure>
-							<img id="imTop0" th:src="${animes.imagen}" height="330px"
+							<img id="imTop0" th:src="${series.imagen}" height="330px"
 								width="100%" alt="Mountains">
 							<figcaption id="titleTop0">
-								<h1 th:text="${animes.nombre}"></h1>
-								<p th:text="${animes.genero}"></p>
+								<h1 th:text="${series.nombre}"></h1>
+								<p th:text="${series.genero}"></p>
 							</figcaption>
 						</figure>
 

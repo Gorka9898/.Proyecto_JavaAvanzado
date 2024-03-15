@@ -32,7 +32,7 @@
 			class="nav__open"><i></i><i></i><i></i></label>
 		<div class="nav">
 			<ul class="nav__items">
-
+				
 			</ul>
 		</div>
 	</nav>
@@ -45,32 +45,32 @@
 
 				<div id="imagen" class="d-flex ">
 					
-					<img th:src="${serie.imagen}" height="300px" width="200px">
+					<img th:src="${anime.imagen}" height="300px" width="200px">
 					
 					
 				</div>
 				<div id="rating">
-					<h4 id="puntuacion">Puntuacion:&nbsp;&nbsp;<span  th:text="${serie.puntuacion}"></span></h4>
+					<h4 id="puntuacion">Puntuacion:&nbsp;&nbsp;<span  th:text="${anime.puntuacion}"></span></h4>
 				</div>
 			</div>
 			<div class="ElGrid ElGrid2">
 
 				<div id="nombre">
 					<h4>Nombre:&nbsp;&nbsp;</h4>
-					<h4 id="nombre" th:text="${serie.nombre}" ></h4>
+					<h4 id="nombre" th:text="${anime.nombre}" ></h4>
 				</div>
 
 				<div id="genero">
 					<h4>Genero:&nbsp;&nbsp;</h4>
-					<h4 id="genero" th:text="${serie.genero}"></h4>
+					<h4 id="genero" th:text="${anime.genero}"></h4>
 				</div>
 
 				<div id="descipcion">
 					<h5>Descripcion:&nbsp;&nbsp;</h5>
-					<h5 id="genero" th:text="${serie.sinopsis}"></h5>
+					<h5 id="genero" th:text="${anime.sinopsis}"></h5>
 				</div>
 
-	
+		
 
 			</div>
 		</div>

@@ -100,6 +100,14 @@ public class Serie extends Series{
 	public void setSinopsis(String sinopsis) {
 		this.sinopsis = sinopsis;
 	}
-	
 
+	public int getPuntuacion() {
+		return puntuacion;
+	}
+
+	public void setPuntuacion(int puntuacion) {
+		this.puntuacion = puntuacion;
+	}
+	
+	
 }

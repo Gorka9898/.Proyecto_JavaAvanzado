@@ -11,7 +11,7 @@
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="/css/HomeLoged.css">
+<link rel="stylesheet" href="/css/Pruebas.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -25,47 +25,54 @@
 	<script>
 		window.onload = random_img;
 
-		var portadas = [ "los-elegidos.jpg", "la-valla.jpg",
-				"la-clave-del-exito.jpg", "rebellion.jpg",
-				"el-cuerpo-en-llamas.jpg", "vivir-sin-permisos.jpg",
-				"mi-dulze-niña.jpg", "el-silencio.jpg", "3%.jpg", "avatar.jpg",
-				"you.jpg", "one-day.jpg", "machos-alfa.jpg", "griselda.jpg",
-				"engaños.jpg", "outlander.jpg", "2m-bajo-tierra.jpg",
-				"la-caza.jpg", "la-chica-de-la-nive.jpg", "outer-banks.jpg",
-				"banda-de-hermanos.jpg", "dark.jpg", "los-100.jpg",
-				"the-office.jpg", "oa.jpg", "lupin.jpg",
-				"la-catedral-del-mar.jpg", "entrevias.jpg", "riverdale.jpg",
-				"sombra-y-huesos.jpg", "la-luz-que-no-puedes-ver.jpg",
-				"breaking-bad.jpg", "bridgerton.jpg", "the-witcher.jpg",
-				"black-mirror.jpg", "warrior.jpg", "blacklist.jpg",
-				"viola.jpg", "berlin.jpg", "narcos.jpg", "the_office.jpg",
-				"love_death.jpg", "fortitude.jpg", "la_escalera.jpg",
-				"the_walking_dead.jpg", "urgencias.jpg", "feud.jpg",
-				"the_undoing.jpg", "estacion_once.jpg", "the_blood.jpg",
-				"pequeñas_mentirosas.jpg", "nancy_drew.jpg",
-				"one_tree_hill.jpg", "tower.jpg", "the_head.jpg",
-				"the_town_is_ours.jpg", "patria.jpg", "la-amiga-estupenda.jpg",
-				"Cairculo_cerrado.jpg", "El_aangel_de_la_muerte.jpg",
-				"the_wire.jpg", "la_casa_del_dragon.jpg", "banshee.jpg",
-				"30_monedas.jpg", "golden_age.jpg", "chapelwaite.jpg",
-				"fringe.jpg", "euphoria.jpg", "the_white_lotus.jpg",
-				"big_little_lies.jpg", "el_cuento_de_la_criada.jpg",
-				"la_materia_oscura.jpg", "succesion.jpg", "true_detective.jpg",
-				"mare_of_eastTown.jpg", "the_last_of_us.jpg",
-				"los-originales.jpg", "from.jpg", "found.jpg", "La_Brea.jpg",
-				"The_Night_Of_Miniserie.jpg" ]
+		var portadas = [ "86.jpg", "Avatar.jpg", "Barakamon.jpg",
+				"Belzebub.jpg", "Black_Lagoon.jpg", "Bocchi.jpg",
+				"Boku_no_hero3.jpg", "Bomberos.jpg", "Bomberos2.jpg",
+				"Chaika.jpg", "Charlotte.jpg", "Danmachi.jpg",
+				"Danmachi_3.jpg", "Death_note.jpg", "Dimension_W.jpg",
+				"Dororo.jpg", "Dr.Stone.jpg", "Dr.Stone2.jpg",
+				"Dragon_Maid.jpg", "Dungeon_no.jpg", "Erased.jpg",
+				"One_piece.jpg", "Escudo.jpg", "Fairy_Tail.jpg",
+				"Fairy_Tale.jpg", "Fate.jpg", "Full_Metal.jpg", "Gate.jpg",
+				"Gate2.jpg", "Genjitsu_Shugi.jpg", "Gente_Lista_el_Anime.jpg",
+				"Gente_Lista2.jpg", "Goblin_Slayer.jpg", "Grand_Blue.jpg",
+				"Hai_to_Gensou.jpg", "Haikyuu.jpg", "Haikyuu_top.jpg",
+				"Hunter_x_Hunter.jpg", "Hyouka.jpg", "Isekai_Ojisan.jpg",
+				"Itai_no_wa.jpg", "Jigokuraku.jpg", "Kaguya-sama.jpg",
+				"Kamisama_no_memou.jpg", "Kanata_no_Astra.jpg", "Karakai.jpg",
+				"kekkai.jpg", "Kimentsu.jpg", "Kimetsu.jpg", "Kingdom4.jpg",
+				"Kishuku.jpg", "Kobayashi.jpg", "Konosuba.jpg",
+				"Konosuba2.jpg", "Log_Horizon_2.jpg", "Log_hotizon.jpg",
+				"Made_in_Abyss.jpg", "Mahotsukai_no_Yome.jpg",
+				"mahotsukai_no_yome2.jpg", "Mahou_no_tabita.jpg",
+				"Mahouka.jpg", "mahouka_koukou.jpg", "Dragon_ball_z.jpg",
+				"Maou_Gakuen.jpg", "Mieruko.jpg", "Mob_Psycho.jpg",
+				"Mushoku_Tensei.jpg", "Musoku_Tensou2.jpg", "Nanbaka.jpg",
+				"One_punch_man.jpg", "Oregairu.jpg", "Orfanato.jpg",
+				"Osi_no_ko.jpg", "Overlord.jpg", "Overlord2.jpg",
+				"Owari_no_seraph.jpg", "Plastic_Memories.jpg", "Re_Zero2.jpg",
+				"Rewrite.jpg", "Sakamoto.jpg", "SAO_Alicization.jpg",
+				"Sasageio.jpg", "School_Prison.jpg",
+				"Shingeki_no_sasageio.jpg", "Bleach.jpg", "Singeki.jpg",
+				"Slime.jpg", "Slime2.jpg", "Spy_x_Family.jpg",
+				"Steins_Gate.jpg", "Strai_Dogs.jpg", "Stray_Dogs_4.jpg",
+				"Suspendi_caldo_de_pollo.jpg", "Tengen_topan.jpg",
+				"Tensai_Ouji.jpg", "tsuki_ga_michibu.jpg", "Uchi_no_ko.jpg",
+				"Ushio_no_Tora.jpg", "naruto.jpg", "Vinland.jpg",
+				"Violet_Evergarden.jpg", "Youjou_Senki.jpg",
+				"Youjou_Senki2.jpg", "Jujutsu.jpg", ]
 
 		function random_img() {
 
 			var rand = 0;
 
-			for (var j = 0; j <= 28; j++) {
+			for (var j = 0; j <= 27; j++) {
 
 				rand = Math.floor(Math.random() * (portadas.length - 1) + 1);
 				console.log(rand);
 				rand = portadas[rand];
 				console.log(rand);
-				document.getElementsByTagName("img")[j].src = 'img/Portadas-series/'
+				document.getElementsByTagName("img")[j].src = 'img/Portadas/'
 						+ rand;
 
 			}
@@ -83,92 +90,71 @@
 			<div class="leaf">
 				<div></div>
 				<div>
-					<img src="img/Portadas-series/los-elegidos.jpg" height="125px"
+					<img src="img/Portadas/Dororo.jpg" height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img src="img/Portadas/Dororo.jpg" height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img src="img/Portadas/Bleach.jpg" height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img src="img/Portadas/Danmachi.jpg" height="125px" width="125px"></img>
+				</div>
+				<div>
+					<img src="img/Portadas/Death_note.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Escudo.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Erased.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Gate.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Fate.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Grand_Blue.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Hyouka.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Jujutsu.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Karakai.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Mahouka.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Kishuku.jpg" height="125px" width="125px">
+				</div>
+				<div>
+					<img src="img/Portadas/Mahou_no_tabita.jpg" height="125px"
 						width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/one-day.jpg" height="125px"
-						width="125px"></img>
+					<img src="img/Portadas/naruto.jpg" height="125px" width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/la-caza.jpg" height="125px"
-						width="125px"></img>
+					<img src="img/Portadas/One_piece.jpg" height="125px" width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/dark.jpg" height="125px"
-						width="125px"></img>
+					<img src="img/Portadas/Orfanato.jpg" height="125px" width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/bridgerton.jpg" height="125px"
-						width="125px">
+					<img src="img/Portadas/Mieruko.jpg" height="125px" width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/entrevias.jpg" height="125px"
-						width="125px">
+					<img src="img/Portadas/Overlord.jpg" height="125px" width="125px">
 				</div>
 				<div>
-					<img src="img/Portadas-series/breaking-bad.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/engaños.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/feud.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/La_Brea.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/los-100.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/lupin.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/machos-alfa.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/nancy_drew.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/sombra-y-huesos.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/the_head.jpg" height="125px"
-						width="125px"></img>
-				</div>
-				<div>
-					<img src="img/Portadas-series/the_office.jpg" height="125px"
-						width="125px"></img>
-				</div>
-				<div>
-					<img src="img/Portadas-series/the_undoing.jpg" height="125px"
-						width="125px"></img>
-				</div>
-				<div>
-					<img src="img/Portadas-series/the_wire.jpg" height="125px"
-						width="125px"></img>
-				</div>
-				<div>
-					<img src="img/Portadas-series/tower.jpg" height="125px"
-						width="125px"></img>
-				</div>
-				<div>
-					<img src="img/Portadas-series/viola.jpg" height="125px"
-						width="125px">
-				</div>
-				<div>
-					<img src="img/Portadas-series/warrior.jpg" height="125px"
-						width="125px">
+					<img src="img/Portadas/Sasageio.jpg" height="125px" width="125px">
 				</div>
 
 			</div>
@@ -177,31 +163,29 @@
 
 			<div class="leaf leaf2">
 				<div>
-					<img src="img/Portadas-series/la-luz-que-no-puedes-ver.jpg"
-						height="125px" width="125px"></img>
+					<img src="img/Portadas/Slime2.jpg" height="125px" width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/love_death.jpg" height="125px"
+					<img src="img/Portadas/Tengen_topan.jpg" height="125px"
 						width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/la-caza.jpg" height="125px"
-						width="125px"></img>
+					<img src="img/Portadas/Strai_Dogs.jpg" height="125px" width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/la-amiga-estupenda.jpg"
-						height="125px" width="125px"></img>
+					<img src="img/Portadas/Vinland.jpg" height="125px" width="125px"></img>
 				</div>
 
 				<div>
-					<img src="img/Portadas-series/one_tree_hill.jpg" height="125px"
+					<img src="img/Portadas/Tensai_Ouji.jpg" height="125px"
 						width="125px"></img>
 				</div>
 				<div>
-					<img src="img/Portadas-series/oa.jpg" height="125px" width="125px">
+					<img src="img/Portadas/Violet_Evergarden.jpg" height="125px"
+						width="125px">
 				</div>
 				<div>
-					<img src="img/Portadas-series/narcos.jpg" height="125px"
+					<img src="img/Portadas/Oujou_Senki.jpg" height="125px"
 						width="125px">
 				</div>
 
@@ -214,8 +198,9 @@
 	<nav class="sticky navbar">
 		<div class="brand  display__logo d-flex align-items-center">
 			<a href="#top" class="nav__link"> <span class="logo">My
-					Series</span></a> <a href="/animeLoged" class="nav__link" id="enlace-Series">
-				Animes </a>
+					Series</span></a> <a href="/seriesLoged" class="nav__link" id="enlace-Series">
+				Series </a>
+
 		</div>
 
 		<input type="checkbox" id="nav" class="hidden" /> <label for="nav"
@@ -225,8 +210,9 @@
 				<li class="nav__item"><a href="/admin" class="nav__link">Admin</a></li>
 				<li class="nav__item"><a href="#home" class="nav__link">Top
 						11</a></li>
-				<li class="nav__item"><a href="#portfolio" class="nav__link">Gachapon</a></li>
-				<li class="nav__item"><a href="/directorioSeriesLoged"
+				<li class="nav__item"><a href="#portfolio" class="nav__link"
+					id="nav_link">Gachapon</a></li>
+				<li class="nav__item"><a href="directorioAnimeLoged"
 					class="nav__link">Directorio</a></li>
 				<li class="nav__item"><a href="/signout" class="nav__link">Log
 						Out</a></li>
@@ -265,22 +251,62 @@
 			xhr.setRequestHeader('X-RapidAPI-Host', 'anime-db.p.rapidapi.com');
 			xhr.send(data);
 
-			xhr.addEventListener('readystatechange', function() {
-				if (this.readyState === this.DONE) {
-					var datos = JSON.parse(this.responseText);
-					console.log(datos);
+			xhr
+					.addEventListener('readystatechange',
+							function() {
+								if (this.readyState === this.DONE) {
+									var datos = JSON.parse(this.responseText);
+									console.log(datos);
 
-					//Top 11 Animes
-					for (var i = 0; i <= 10; i++) {
+									//Top 11 Animes
+									for (var i = 0; i <= 10; i++) {
 
-					}
+										var img = datos.data[i].image;
+										var titulo = datos.data[i].title;
+										var genero = datos.data[i].genres;
 
-					//Imagen random
+										var juntar = "imTop" + i;
+										var juntarTitulo = "titleTop" + i;
 
-					var random = Math.floor(Math.random() * 1110);
+										var imagenTop = document
+												.getElementById(juntar);
+										var imagenTopTitulo = document
+												.getElementById(juntarTitulo);
 
-				}
-			});
+										imagenTop.src = img;
+
+										imagenTopTitulo.innerHTML = titulo;
+										imagenTopTitulo.innerHTML += "<p>"
+												+ genero[0] + "</p>";
+										console.log(genero);
+
+									}
+
+									//Imagen random
+
+									var random = Math
+											.floor(Math.random() * 1110);
+
+									console.log(random);
+
+									var img = datos.data[random].image;
+									var titulo = datos.data[random].title;
+									var genero = datos.data[random].genres;
+
+									var imagenTop = document
+											.getElementById("imgRandom");
+
+									var imagenTopTitulo = document
+											.getElementById("tituloRandom");
+
+									imagenTop.src = img;
+
+									imagenTopTitulo.innerHTML = titulo;
+									imagenTopTitulo.innerHTML += "<p>"
+											+ genero[0] + "</p>";
+									console.log("lo hace");
+								}
+							});
 
 			function random() {
 
@@ -352,99 +378,99 @@
 				<div class="inicio">
 					<figure>
 						<img id="" style="border-radius: 10px"
-							src="img/anime-adicionales/b-screen.jpg" height="330px"
-							width="100%" alt="Mountains">
+							src="img/anime-adicionales/top11.jpg" height="330px" width="100%"
+							alt="Mountains">
 						<figcaption id="">
-							Top Series
-							<p>Series con la mejor valoracion en el ranking</p>
+							Top Animes
+							<p>Animes con la mejor valoracion en el ranking</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop0" src="img/Portadas-series/la-caza.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop0" src="img/Portadas/Frieren.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop0">
-							La Caza
-							<p>ACCION</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop1" src="img/Portadas-series/love_death.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop1" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop1">
-							Love Death
-							<p>DRAMA</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop2" src="img/Portadas-series/entrevias.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop2" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop2">
-							Entrevias
-							<p>DRAMA</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop3" src="img/Portadas-series/tower.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop3" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop3">
-							Tower
-							<p>ACCION</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop4" src="img/Portadas-series/narcos.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop4" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop4">
-							Narcos
-							<p>ACCION</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop5" src="img/Portadas-series/viola.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop5" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop5">
-							Viola
-							<p>DRAMA</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop6" src="img/Portadas-series/warrior.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop6" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop6">
-							Warrior
-							<p>ACCION</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop7" src="img/Portadas-series/la-amiga-estupenda.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop7" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop7">
-							La amiga Estupenda
-							<p>DRAMA</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop8" src="img/Portadas-series/the_office.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop8" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop8">
-							The Office
-							<p>COMEDIA</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop9" src="img/Portadas-series/lupin.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop9" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop9">
-							Lupin
-							<p>DETECTIVES</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img id="imTop10" src="img/Portadas-series/La_Brea.jpg"
-							height="330px" width="100%" alt="Mountains">
+						<img id="imTop10" src="img/Portadas/Bomberos.jpg" height="330px"
+							width="100%" alt="Mountains">
 						<figcaption id="titleTop10">
-							La Brea
-							<p>ACCION</p>
+							The Day
+							<p>Descripcion</p>
 						</figcaption>
 					</figure>
 		</section>
@@ -463,11 +489,11 @@
 
 							<h3>Random anime</h3>
 							<figure id="random-fig">
-								<img id="imgRandom" src="img/Portadas-series/one-day.jpg"
+								<img id="imgRandom" src="img/Portadas/Bomberos.jpg"
 									height="100%" width="100%" alt="Mountains">
 								<figcaption id="tituloRandom">
-									One Day
-									<p>DRAMA</p>
+									The Day
+									<p>Descripcion</p>
 								</figcaption>
 							</figure>
 							<button id="boton-random" onclick="random">Re-roll</button>

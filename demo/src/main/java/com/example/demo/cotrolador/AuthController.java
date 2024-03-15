@@ -18,6 +18,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -61,6 +62,7 @@ public class AuthController {
 
   @PostMapping("/signin")
   public ResponseEntity<?> authenticateUser(@Valid LoginRequest loginRequest) {
+	  
 
     Authentication authentication = authenticationManager
         .authenticate(new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
@@ -68,28 +70,26 @@ public class AuthController {
     SecurityContextHolder.getContext().setAuthentication(authentication);
 
     UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-
+// Aqui error
     ResponseCookie jwtCookie = jwtUtils.generateJwtCookie(userDetails);
-
+    System.out.println("Error arreglado");
     List<String> roles = userDetails.getAuthorities().stream()
         .map(item -> item.getAuthority())
         .collect(Collectors.toList());
 
     return ResponseEntity.ok().header(HttpHeaders.SET_COOKIE, jwtCookie.toString())
-        .body(new UserInfoResponse(userDetails.getId(),
-                                   userDetails.getUsername(),
-                                   userDetails.getEmail(),
-                                   roles));
+        .body("<html><script>\n" + "window.onload = inicio;\n" +
+        		"function inicio(){ location.href ='/loged' }</script></html> ");
   }
 
   @PostMapping("/signup")
   public RedirectView registerUser(@Valid SignupRequest signUpRequest) {
     if (userRepository.existsByUsername(signUpRequest.getUsername())) {
-      return new RedirectView("/formularioRegister");
+      return new RedirectView("/formularioLogin");
     }
 
     if (userRepository.existsByEmail(signUpRequest.getEmail())) {
-      return new RedirectView("/formularioRegister");
+      return new RedirectView("/formularioLogin");
     }
 
     // Create new user's account
@@ -130,13 +130,14 @@ public class AuthController {
     user.setRoles(roles);
     userRepository.save(user);
 
-    return new RedirectView("/");
+    return new RedirectView("/formularioLogin");
   }
 
-  @PostMapping("/signout")
+  @GetMapping("/signout")
   public ResponseEntity<?> logoutUser() {
     ResponseCookie cookie = jwtUtils.getCleanJwtCookie();
     return ResponseEntity.ok().header(HttpHeaders.SET_COOKIE, cookie.toString())
-        .body(new MessageResponse("You've been signed out!"));
+        .body("<html><script>\n" + "window.onload = inicio;\n" +
+        		"function inicio(){ location.href ='/' }</script></html> ");
   }
 }

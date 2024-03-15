@@ -87,6 +87,7 @@ public class Anime extends Series implements Serializable{
 		this.estado = estado;
 	}
 
+
 	public String getImagen() {
 		return imagen;
 	}
@@ -101,6 +102,14 @@ public class Anime extends Series implements Serializable{
 
 	public void setSinopsis(String sinopsis) {
 		this.sinopsis = sinopsis;
+	}
+
+	public int getPuntuacion() {
+		return puntuacion;
+	}
+
+	public void setPuntuacion(int puntuacion) {
+		this.puntuacion = puntuacion;
 	}
 	
 	

@@ -274,33 +274,43 @@
 		.container{
 			display: flex; 
 			justify-content: center;
-		    align-content: center;
-		    margin-top: 10% 
-		    
+		    align-items: center;
+		    margin-top: 10%; 
 		   
 		}
-		#titulo-register{
-		color:red;
+		
+		#titulo-inicio{
+			color:red;
 		}
+		
+		form{
+			display: flex; 
+			flex-direction:column;
+			justify-content: center;
+			align-items: center;	
+		}
+		
 		tr{
-		display: flex;
-		justify-content: center;
-		align-items: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
+		
 		td{
 		
-		color: white;
+			
 		
 		}
 		.container form table tr:nth-child(4){
-		display:flex;
-		justify-content: center;
-		align-content: center;
+			display:flex;
+			justify-content: center;
+			align-content: center;
 		}
 		
 		#profile-img {
 		    height:180px;
 		}
+		
 		.h-80 {
 		    height: 80% !important;
 		}
